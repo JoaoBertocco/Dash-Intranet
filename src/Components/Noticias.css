@@ -1,45 +1,47 @@
+/* Noticias.css */
 .noticias-container {
-  padding: 20px;
-  background-color: #f9f9f9;
-}
-
-.noticia {
-  background: #fff;
-  border: 1px solid #ddd;
+  background-color: #f8f9fa; /* Cor de fundo clara */
+  padding: 30px;
   border-radius: 8px;
-  margin: 15px 0;
-  padding: 15px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.noticia-imagem {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
+.card {
+  border: 1px solid #e0e0e0; /* Borda mais clara para os cartões */
+  border-radius: 8px; /* Bordas arredondadas */
+  transition: transform 0.2s; /* Efeito de transição */
 }
 
-.noticia-titulo {
-  font-size: 1.5em;
-  margin: 10px 0;
-  color: #333;
+.card:hover {
+  transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
 }
 
-.noticia-descricao {
-  font-size: 1em;
-  margin: 10px 0;
-  color: #666;
+.card-title {
+  color: #007bff; /* Cor do título mais destacada */
+  font-size: 1.2rem; /* Aumenta o tamanho da fonte do título */
 }
 
-.noticia-link {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background-color: #007bff;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+.card-body {
+  background-color: #ffffff; /* Fundo branco para o corpo do cartão */
 }
 
-.noticia-link:hover {
-  background-color: #0056b3;
+.card-text {
+  font-size: 0.9rem; /* Tamanho da fonte para a descrição */
+}
+
+.btn-primary {
+  background-color: #0056b3; /* Cor do botão mais escura */
+  border-color: #004085; /* Cor da borda do botão */
+  font-size: 0.9rem; /* Tamanho da fonte do botão */
+}
+
+.btn-primary:hover {
+  background-color: #004085; /* Cor do botão ao passar o mouse */
+  border-color: #003768; /* Cor da borda ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 20px; /* Espaço entre os cartões em telas menores */
+  }
 }
