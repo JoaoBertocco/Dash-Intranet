@@ -27,17 +27,12 @@ function Navbar() {
             <li className="nav-item">
               <Link className="nav-link nav-custom" to="/clientes">Clientes</Link>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link nav-custom" to="/projetos">Projetos</Link>
-            </li>
+            
             <li className="nav-item">
               <Link className="nav-link nav-custom" to="/noticias">Notícias</Link>
             </li>
             {/* Novo link para Help-Desk */}
-            <li className="nav-item">
-              <Link className="nav-link nav-custom" to="/help-desk">Help-Desk</Link>
-            </li>
-          </ul>
+           </ul>
         </div>
       </div>
     </nav>
