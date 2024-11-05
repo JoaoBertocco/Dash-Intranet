@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Clientes</title>
+        
+        <!--Link para o CSS-->
+        <link rel="stylesheet" href="src/style.css">
+    </head>
+    <body> 
+        <h1>Cadastro de Clientes</h1>
+
+        <form id="clienteForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="cnpj">CNPJ:</label>
+            <input type="number" id="cnpj" name="cnpj" required><br><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereço" name="endereço" required><br><br>
+
+            <label for="contrato">Contrato:</label>
+            <input for="number" id="contrato" name="contrato" min="1" required><br><br>
+
+            <button type="button" onclick="salvarCliente()">Salvar Cliente</button>
+        </form>
+        <h2>Lista de Clientes</h2>
+        <ul id="listaClientes"></ul>
+
+        <script src="Clientes.js"></script>
+    </body>
+</html>
